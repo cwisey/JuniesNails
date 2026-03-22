@@ -1,14 +1,14 @@
 import "./globals.css";
-
-export const metadata = {
-  title: "Junie's Nails",
-  description: "Random Nail Design Generator",
-};
+import Navbar from "./components/Navbar";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
+
